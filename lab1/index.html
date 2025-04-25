@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Assignment 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: #222;
+      margin: auto;
+      width: 90%;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0 20px 0;
+    }
+
+    header h2 {
+      text-transform: uppercase;
+      color: #e44111;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      float: left;
+      margin-left: 10px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #666;
+      padding: 5px 10px;
+      transition: all ease 0.2s;
+    }
+
+    ul li a:hover {
+      color: #e44111;
+      background-color: #e6e6e6;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+    section h2 {
+      text-align: center;
+      background-color: #e44111;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      color: #ffffff;
+      font-size: 20px;
+      margin: 0 0 20px 0;
+    }
+
+    section div {
+      margin-bottom: 10px;
+    }
+
+    #form-section {
+      border: #666 1px solid;
+      padding: 30px 20px;
+    }
+
+    #form-section h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #form-section div {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      margin: auto;
+    }
+
+    #form-section div input {
+      padding: 8px 10px;
+      font-family: "Inter", sans-serif;
+      margin-bottom: 10px;
+      border: #777 solid 1px;
+      border-radius: 5px;
+    }
+
+    #form-section div input:focus {
+      outline: #e44111 1px solid;
+    }
+
+    #form-section button {
+      background-color: #222;
+      color: white;
+      font-family: "Inter", sans-serif;
+      padding: 10px 0 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    #form-section button:hover {
+      background-color: #e44111;
+      color: white;
+      font-family: "Inter", sans-serif;
+      padding: 10px 0 10px 0;
+      border: none;
+      border-radius: 5px;
+      transition: background-color ease 0.2s;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #e44111;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    footer p {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    #hero {
+      display: flex;
+      gap: 15px;
+    }
+
+    #hero div {
+      flex: 1;
+    }
+
+    #hero img,
+    #hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #hero img {
+      border: 7px solid #222;
+    }
+
+    @media (max-width: 480px) {
+      header {
+        display: block;
+      }
+
+      header h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      ul li {
+        float: none;
+        text-align: center;
+        margin: 0 0 10px;
+      }
+    }
+
+    @media (max-width: 680px) {
+      #hero {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <h2>Companny</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </header>
+    <section id="hero">
+      <div>
+        <img src="./office-smile.jpg" alt="Companny Workers" />
+      </div>
+      <div>
+        <video src="./office-corona.mp4" autoplay muted loop></video>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <div>
+        <h3>Work</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Reprehenderit earum placeat molestias maiores velit exercitationem
+          soluta. Neque, consequuntur voluptatem. Iusto ea iste, amet incidunt
+          aliquid pariatur minus voluptatum fuga dolores odio ad maiores
+          repellat a numquam culpa perferendis eius unde sed suscipit in
+          voluptatibus facere nesciunt natus labore? Optio, est?
+        </p>
+      </div>
+      <div>
+        <h3>Branches</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+          repellendus temporibus, excepturi at animi molestias eveniet ex
+          obcaecati ut quisquam beatae aperiam deserunt! Quam eos quo enim
+          mollitia voluptate saepe nobis quidem expedita. Possimus nostrum est
+          laudantium rem quibusdam dolorem exercitationem et commodi autem a
+          recusandae, quaerat sint magni. Hic impedit officiis nemo illum,
+          repellat magni aut officia quod fugit accusantium ratione doloremque
+          voluptates in quidem rem consectetur ipsam dolor eum incidunt deserunt
+          voluptatibus voluptatum tempora. Mollitia velit enim, repudiandae,
+          veniam voluptates, obcaecati quos ducimus cum magni animi nam incidunt
+          et similique? Error, deserunt laboriosam ipsa quia fugiat expedita
+          omnis.
+        </p>
+      </div>
+    </section>
+    <section id="services">
+      <h2>Services</h2>
+      <div>
+        <h3>AI Integration</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          atque aspernatur accusamus illum tempore culpa itaque neque, unde iste
+          accusantium.
+        </p>
+      </div>
+      <div>
+        <h3>Employee Training</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+          officiis eos, quae ipsam quibusdam velit repellendus autem optio
+          corporis quas expedita ab cupiditate obcaecati quaerat amet? Beatae
+          mollitia vero ex!
+        </p>
+      </div>
+    </section>
+    <section id="form-section">
+      <form action="" method="post">
+        <h3>Subscription Form</h3>
+        <div>
+          <input type="text" name="name" id="name" placeholder="Enter name" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+          />
+          <button type="submit">Subscribe to Newsletters</button>
+        </div>
+      </form>
+    </section>
+    <footer><p>Companny &copy; 2025. All Rights Reserved</p></footer>
+  </body>
+</html>

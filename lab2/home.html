@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GEKO Graphics - Personal portfolio showcasing web development and design projects.">
+    <meta name="keywords" content="portfolio, web development, graphic design, GEKO Graphics">
+    <meta name="author" content="Robert Machado">
+    <title>GEKO Graphics - Home</title>
+    <link rel="shortcut icon" href="./images/camera-shutter.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="greeting()">
+    <header id="header">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a class="active" href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./survey.html">Survey</a></li>
+                <li><a href="./contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark mode">Dark</button>
+    </header>
+    <main id="home-main">
+        <section id="hero">
+            <figure>
+                <img src="./images/space.jpg" alt="Hero image showcasing creative design" usemap="#hero-map">
+                <map name="hero-map">
+                    <area shape="rect" coords="0,0,200,200" href="./projects.html" alt="View Projects">
+                </map>
+            </figure>
+            <div>
+                <h1>GEKO Graphics</h1>
+                <p>Welcome to my creative space! I specialize in crafting visually stunning and functional websites. Explore my work and get in touch to collaborate.</p>
+                <a href="./projects.html" class="cta">View My Work</a>
+            </div>
+        </section>
+        <section id="about-preview">
+            <div>
+                <h2>About Me</h2>
+                <p>I'm a passionate web developer with a knack for creating user-friendly and aesthetically pleasing websites.</p>
+                <a href="./about.html">Learn More</a>
+            </div>
+            <div>
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <img src="./images/leading tech.jpg" alt="Project A">
+                    <img src="./images/green tech.jpg" alt="Project B">
+                </div>
+                <a href="./projects.html">See All Projects</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>GEKO Graphics &copy; 2025. All rights reserved.</p>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>
